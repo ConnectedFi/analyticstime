@@ -30,10 +30,6 @@ COPY . .
 # Build application
 RUN bun run build
 
-# Install all dependencies including devDependencies
-RUN rm -rf node_modules && \
-    bun install
-
 
 # Final stage for app image
 FROM base
