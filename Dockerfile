@@ -30,9 +30,9 @@ COPY . .
 # Build application
 RUN bun run build
 
-# Remove development dependencies
+# Remove development dependencies but keep production deps
 RUN rm -rf node_modules && \
-    bun install --ci
+    bun install --production=false
 
 
 # Final stage for app image
