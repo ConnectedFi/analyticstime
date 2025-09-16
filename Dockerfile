@@ -30,6 +30,9 @@ COPY . .
 # Build application
 RUN bun run build
 
+# Fix missing dependencies in .output/server/node_modules
+RUN cp -r node_modules/react-dom .output/server/node_modules/ || true
+
 
 # Final stage for app image
 FROM base
