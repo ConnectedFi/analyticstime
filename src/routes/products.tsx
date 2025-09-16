@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ProductsPage } from "../components/ProductsPage";
-import { UPLLogo } from "../components/UPLLogo";
+import { CFiLogo } from "../components/CFiLogo";
 
 export const Route = createFileRoute("/products")({
 	component: ProductsWireframe,
@@ -13,7 +13,7 @@ function ProductsWireframe() {
 			<nav className="bg-white border-b border-gray-200">
 				<div className="px-6 py-3">
 					<div className="flex items-center space-x-8">
-						<UPLLogo size="md" />
+						<CFiLogo size="md" />
 						<div className="flex space-x-8">
 							<button
 								type="button"

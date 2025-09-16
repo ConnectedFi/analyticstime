@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { UPLLogo } from '../components/UPLLogo'
+import { CFiLogo } from '../components/CFiLogo'
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -9,11 +9,11 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center">
       <div className="text-center space-y-8">
-        <UPLLogo size="lg" className="mx-auto" />
+        <CFiLogo size="lg" className="mx-auto" />
         
         <div className="space-y-4">
           <h1 className="text-4xl font-bold text-gray-900">
-            UPL Analytics
+            CFi Analytics
           </h1>
           <p className="text-lg text-gray-600 max-w-md mx-auto">
             View comprehensive sales analytics and customer insights
